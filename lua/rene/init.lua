@@ -12,12 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    spec = "rene.lazy.plugins",
+    spec = "rene.plugins",
     ui = {
         border = "rounded",
     },
     install = {
-        colorscheme = { "github_dark_high_contrast", "lunaperche" },
+        colorscheme = { "github_dark_high_contrast" },
     },
     change_detection = {
         notify = false,

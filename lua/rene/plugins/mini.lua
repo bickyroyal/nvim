@@ -2,7 +2,19 @@ return {
     "echasnovski/mini.nvim",
     version = "*",
     config = function()
-        require("mini.pairs").setup()
+        require("mini.surround").setup({
+            mappings = {
+                add = "gsa",
+                delete = "gsd",
+                replace = "gsr",
+                find = "",
+                find_left = "",
+                highlight = "",
+                update_n_lines = "",
+                suffix_last = "",
+                suffix_next = "",
+            },
+        })
         require("mini.files").setup({
             mappings = {
                 go_in = "",
